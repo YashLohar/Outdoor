@@ -1,0 +1,75 @@
+.composition{
+        flex-basis: 45%;
+        position: relative;
+        top: 2rem;
+        padding: 0 1rem;
+
+        @include media(1024px){
+            flex-basis: 100%;
+            padding: 3rem 1rem;
+        }
+        
+
+        &__photo{
+            position: absolute;
+            transition: all 200ms;
+            outline-offset: .8rem;
+
+            @include media(1024px){
+                position: relative;
+                width:32%;
+            }
+
+            @include media(938px){
+                position: relative;
+                
+            }
+
+            @include media(540px){
+                outline-offset: .2rem;
+             }
+
+            &.p1{
+                left: 0;
+                top: -2rem;
+
+                @include media(1024px){
+                    left: 2rem;
+                    top: 0;
+                }
+            }
+
+            &.p2{
+                right: 0%;
+                top: 2rem;
+                @include media(1024px){
+                    left: 0rem;
+                    top: 0;
+                    z-index: 12;
+                    transform: translateY(-3%);
+                }
+            }
+
+            &.p3{
+                left: 20%;
+                top: 6rem;
+
+                @include media(1024px){
+                    left:-2rem;
+                    top: 0;
+                }
+            }
+
+            &:hover{
+                outline: 5px solid $color-primary;
+                z-index: 11221;
+                transform: scale(1.1);
+
+                @include media(540px){
+
+                    outline: 2px solid $color-primary;
+                    
+                 }
+            }
+        }
+    }

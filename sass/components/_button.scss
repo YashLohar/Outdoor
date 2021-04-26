@@ -1,0 +1,49 @@
+.btn{
+    margin: 0 auto;
+
+    &,
+	&:link, 
+	&:visited{
+              text-transform: uppercase;
+              text-decoration: none;
+              padding: 1.5rem 3rem;
+              display: inline-block;
+              background-color: $color-white;
+              border-radius: 10rem;
+              transition: all .2s;
+              position: relative;
+              font-size: 1rem;
+              border: none;
+              cursor: pointer;
+              margin-top: 3.5rem;
+
+              &.button{
+                  background-color: $color-primary;
+                  color: $color-white;
+              }
+
+              @include media(540px){
+                padding: 1.2rem 2rem;
+                font-size: .9rem;
+             }
+
+             &.animation-3{
+                animation: moveInBottom 0.5s ease-out 0.75s;
+                animation-fill-mode: backwards;
+             }
+    }
+
+    &-text{
+        text-decoration: none;
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+        padding-bottom: .3rem;
+        transition: all 200ms;
+
+        &:hover{
+            background-color: $color-primary;
+            color: $color-white;
+            padding: .5rem;
+        }
+    }
+}

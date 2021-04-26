@@ -1,0 +1,82 @@
+.heading{
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+
+    @include media(768px){
+        font-size: 2rem;
+        letter-spacing: 1rem;
+     }
+
+     &.animation-1{
+        animation-name: moveInLeft;
+        animation-duration: 0.9s;
+        animation-timing-function: ease-out;
+        text-transform: uppercase;
+     }
+}
+
+.subheading{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .9rem;
+    margin-top: 1.5rem;
+
+    @include media(768px){
+        font-size: .8rem;
+        letter-spacing: .5rem;
+     }
+
+     &.animation-2{
+        animation: moveInRight 0.9s ease-out;
+     }
+}
+
+
+.secondry-heading{
+    text-align: center;
+    color: $color-primary;
+    font-size: 2rem;
+    transition: all 100ms;
+    margin-bottom: 5rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+
+    @include media(1024px){
+        margin-bottom: 1rem;
+    }
+
+    @include media(844px){
+       font-size: 1.5rem;
+    }
+
+    @include media(700px){
+        font-size: 1rem;
+     }
+
+    &:hover{
+        transform: skewY(-2deg);
+    }
+}
+
+.tertiary-heading{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-grey-dark;
+    margin-bottom: 1.5rem;
+
+    @include media(540px){
+        font-size: 1rem;
+     }
+}
+.para{
+    font-size: 1rem;
+    color:$color-grey-dark;
+    margin-bottom: 1.5rem;
+    line-height: 1.8rem;
+
+
+    @include media(540px){
+        font-size: .8rem;
+     }
+}

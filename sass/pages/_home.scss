@@ -1,0 +1,57 @@
+.about-section{
+    background-color: $color-grey-light-1;
+    padding: 15rem 0 25rem 0;
+    margin-top: -10rem;
+
+    .about{
+        @include inner;
+        @include flex;
+        justify-content: space-between;
+    }
+
+    @include media(540px){
+        padding: 15rem 0 20rem 0;
+     }
+}
+
+.feature-section{
+    padding: 14rem 0;
+    transform:skewY(-12deg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
+    url(../img/nat-4.jpg);
+    background-size: cover;
+    background-position: top;
+    margin-top: -10rem;
+}
+
+.section-tours{
+    background-color: $color-grey-light-1;
+    padding: 20rem 0 10rem 0;
+    margin-top: -10rem;
+    text-align: center;
+
+    .card-section{
+        @include inner;
+        @include flex;
+        justify-content: space-between;
+    }
+}
+
+.section-book{
+    width: 100%;
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+
+    .book{
+        @include inner;
+        height: 530px;
+        background-image: url(../img/nat-10.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center center;
+
+        @include media(1000px){
+           
+         }
+    }
+}
